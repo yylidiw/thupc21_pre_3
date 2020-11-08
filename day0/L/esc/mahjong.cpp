@@ -164,10 +164,10 @@ int main()
 		{
 			printf("%c OUT %s\n",'A'+cur,crd(play));
 			for(int i=1;i<4;++i)
-				if(pl[cur+i&3].dis({play},1)==0)
+				if(pl[cur+i*dir&3].dis({play},1)==0)
 				{
-					printf("%c RON\n",'A'+(cur+i&3));
-					printf("%c WIN\n",'A'+(cur+i&3));
+					printf("%c RON\n",'A'+(cur+i*dir&3));
+					printf("%c WIN\n",'A'+(cur+i*dir&3));
 					return 0;
 				}
 
