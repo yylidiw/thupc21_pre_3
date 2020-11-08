@@ -1,5 +1,6 @@
 args:
-  n: 1000
+  k: 4
+  n: 500
 compile:
   c: -O2 -std=c11
   cpp: -O2 -std=c++14
@@ -15,7 +16,7 @@ pre: []
 samples: []
 time limit: 1.0
 title:
-  zh-cn: 用于试题标题的中文名称
+  zh-cn: 合法序列
 type: program
 users: {}
 version: 2
