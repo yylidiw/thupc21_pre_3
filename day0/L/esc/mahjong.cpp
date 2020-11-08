@@ -40,7 +40,7 @@ struct hand
 				printf("%s ",crd(i));
 		puts("");
 	}
-	int dis(const arr d,int add=0)
+	int dis(const arr &d,int add=0)
 	{
 		arr c=cnt;
 		int tot=0;
