@@ -117,7 +117,10 @@ int main()
 	}
 	for(int i=1;i<=13;++i)
 		for(int j=0;j<=3;++j)
+		{
+			printf("%c IN %s\n",crd(deck[now]));
 			pl[j].cnt[deck[now++]]++;
+		}
 
 	while(1)
 	{
