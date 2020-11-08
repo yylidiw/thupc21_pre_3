@@ -17,5 +17,7 @@ time limit: 1.0
 title:
   zh-cn: 用于试题标题的中文名称
 type: program
-users: {}
+users:
+  esc:
+    std: {expected: == 100, path: esc/mahjong.cpp}
 version: 2
