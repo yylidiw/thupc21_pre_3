@@ -71,16 +71,19 @@ struct hand
 										int cs=dmax(0,k-c[j]);
 										if(d>=2&&!w&&d-2+z<=tot)
 											cmin(g[y][d-2][z+d-2][1],F+cs);
-										if(d>=3&&z+d-3<=tot)
+										if(d>=3&&z+d-3<tot)
 											cmin(g[y][d-3][z+d-3+1][w],F+cs);
 										if(d<3&&z+d<=tot)
 											cmin(g[y][d][z+d][w],F+cs);
 									}
 								}
 				if(j==i*9+9)
+				{
+					memset(f,63,sizeof(f));
 					for(int z=0;z<=tot;++z)
 						for(int w=0;w<=1;++w)
 							f[0][0][z][w]=g[0][0][z][w];
+				}
 				else memcpy(f,g,sizeof(g));
 			}
 		int (*F)[2]=f[0][0];
