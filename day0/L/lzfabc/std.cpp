@@ -101,8 +101,12 @@ int check(int x){
 	pii as = work(4 - (14 - p[x].sum) / 3);
 	return as.se;
 }
+inline bool ts(int x){
+	for(int i = 1;i <= p[x].sum;++i) if(p[x].a[i] > 34) return 1;
+	return 0;
+}
 void checkhu(int x,int chu){
-	for(int i = nxt(x);i != x;i = nxt(i)){
+	for(int i = nxt(x);i != x;i = nxt(i)) if(!ts(i)){
 		p[i].a[++p[i].sum] = chu;
 		if(check(i) == -1) hupai(i);
 		--p[i].sum;
