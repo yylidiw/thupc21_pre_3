@@ -18,7 +18,7 @@ samples:
  - cases: [1]
 time limit: 1.0
 title:
-  zh-cn: 麻将模拟器
+  zh-cn: L. 麻将模拟器
 type: program
 users:
   esc:
