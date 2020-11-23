@@ -5,7 +5,7 @@ const int MAXN = 500, MAXK = 4;
 const int mod = 998244353;
 int dp[MAXN][1 << (MAXK - 1)];
 bool legal[1 << MAXK];
-int inverse(int mask, int w)
+int reverse(int mask, int w)
 {
     int ret = 0;
     while (w--)
@@ -44,17 +44,17 @@ int main()
         for (int i = 0; i < bound_bits; ++i)
             legal[i] = ((mask >> i) & 1);
         bool flag = true;
-        for (int i = 0; i < bound_bits - k; ++i)
+        for (int i = 0; i <= bound_bits - k; ++i)
         {
             int cur_segment = ((mask >> i) & ((1 << k) - 1));
-            cur_segment = inverse(cur_segment, k);
+            cur_segment = reverse(cur_segment, k);
             if (!legal[cur_segment])
             {
                 flag = false;
                 break;
             }
         }
-        if (flag)  ans = (ans + solve(n, k, inverse(mask >> (bound_bits - k + 1), k - 1))) % mod;
+        if (flag)  ans = (ans + solve(n, k, reverse(mask >> (bound_bits - k + 1), k - 1))) % mod;
     }
     printf("%d\n", ans);
 }
