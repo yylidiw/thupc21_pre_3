@@ -55,9 +55,9 @@ Matrix transfer_matrix(const vector<int> &start_bits)
     for (int j = 0; j < ret.n; ++j)
     {
         if (start_bits[j << 1])
-            ret.data[(j << 1) & ((1 << (k - 1)) - 1)][j] = 1;
+            ret.data[(j << 1) & ((1 << (k - 1)) - 1)][j] += 1;
         if (start_bits[(j << 1) | 1])
-            ret.data[((j << 1) | 1) & ((1 << (k - 1)) - 1)][j] = 1;
+            ret.data[((j << 1) | 1) & ((1 << (k - 1)) - 1)][j] += 1;
     }
     return ret;
 }
