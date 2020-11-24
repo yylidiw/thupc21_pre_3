@@ -1,21 +1,73 @@
 args:
-  n: 1000
+  k: 4
+  n: 500
 compile:
   c: -O2 -std=c11
   cpp: -O2 -std=c++14
   java: ''
   pas: -O2
   py: ''
-data: []
+data:
+- cases:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  score: 100
 folder: problem
 memory limit: 512 MiB
 name: J
 partial score: false
-pre: []
-samples: []
+samples:
+- cases:
+  - 1
 time limit: 1.0
 title:
-  zh-cn: 用于试题标题的中文名称
+  zh-cn: 合法序列
 type: program
-users: {}
+users:
+  lkmcfj:
+    std_linear_dp:
+      expected: == 100
+      path: lkmcfj/std_linear_dp.cpp
+    std_matrix_power:
+      expected: == 100
+      path: lkmcfj/std_matrix_power.cpp
+    brute_force:
+      expected: == 0
+      path: lkmcfj/bf.cpp
 version: 2
