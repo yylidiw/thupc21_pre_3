@@ -16,7 +16,7 @@ $s$ 有 $n-k+1$ 个长度为 $k$ 的子段，如果对于其中的**每一个**�
 
 输入有一行，包含两个用空格隔开的正整数 $n, k$。
 
-保证 $k \leq tl.hn(args['k']), n \leq tl.hn(args['n'])$ 且 $2^k \leq n$。
+保证 $1 \leq k \leq 4, 2^k \leq n \leq 500$。
 
 {{ s('output format') }}
 
