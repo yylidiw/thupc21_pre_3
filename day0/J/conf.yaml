@@ -70,4 +70,8 @@ users:
     brute_force:
       expected: == 0
       path: lkmcfj/bf.cpp
+  yyl:
+    yyl:
+      expected: == 100
+      path: yyl/yyl.cpp
 version: 2
