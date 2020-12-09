@@ -22,6 +22,8 @@ title:
 type: program
 users:
   xzn:
+    checker: {expected: == 100, path: xzn/checker.cpp}
+    wa: {expected: == 0, path: xzn/wa.cpp}
     std: {expected: == 100, path: xzn/std.cpp}
     dp: {expected: == 100, path: xzn/dp.cpp}
 version: 2
