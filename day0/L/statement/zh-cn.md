@@ -173,4 +173,4 @@
 
 {{ s('sample', 1) }}
 
-{{ self.sample_text() }}
+{{ self.sample_file() }}
